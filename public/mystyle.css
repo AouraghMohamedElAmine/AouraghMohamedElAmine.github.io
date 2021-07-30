@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 body{
-       font-family: 'Rubik', sans-serif;
-}
+    font-family: 'Poppins', sans-serif;}
 .logo-border{
     position: absolute;
     right: 70%;
@@ -64,3 +63,7 @@ border: 3px solid rgb(124,58,237);
     }
   }
    
+
+  /*
+  */
+  
