@@ -4,7 +4,7 @@
  let arrow= document.getElementById('check'); 
  let logo= document.getElementById('logo');
  const projects = document.querySelector('#projects');
-
+console.log('js is working')
  projects.addEventListener('click',()=>{
     const hero = document.querySelector('#hero'); 
     const nav = document.querySelector('#nav'); 
