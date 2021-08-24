@@ -22,41 +22,28 @@
  projectsWebView2.addEventListener('click',ProjectScroller);
  projectsMobileView.addEventListener('click',ProjectScroller);
 
- logo.addEventListener('mouseenter',()=>{ 
 
+logo.addEventListener('mouseenter',()=>{ 
     let border= document.getElementsByClassName('logo-border');
     border[0].classList.toggle('logo-border-after');
-
  })
 
  logo.addEventListener('mouseleave',()=>{ 
-
     let border= document.getElementsByClassName('logo-border');
     border[0].classList.toggle('logo-border-after');
-
  })
-
 
 drop.addEventListener('change',()=> {   
 mobile.classList.toggle("hidden"); 
 mobile.classList.toggle("is-open");
 mobile.classList.toggle("scale-y-0");
 
- 
-
-
-     
  })
- 
- 
+
  window.addEventListener('scroll',()=>{ 
      if(mobile.classList.contains("is-open")){
-         drop.dispatchEvent(new Event("change")); 
+          drop.dispatchEvent(new Event("change")); 
          arrow.checked=false;
-
-
-
-
      }
    })
 

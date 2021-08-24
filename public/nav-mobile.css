@@ -12,7 +12,7 @@ label{
     span{
      background: white;
      border-radius:10px;
-     height:7px;
+     height:5px;
      margin: 7px 0;
      transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
    
@@ -57,7 +57,7 @@ label{
      
      transform-origin:bottom;
      width:50%;
-     transform: translate(30px,-11px) rotatez(45deg);
+     transform: translate(28px,-10px) rotatez(45deg);
    
    }
    
