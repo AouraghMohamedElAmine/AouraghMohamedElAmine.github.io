@@ -38,7 +38,7 @@
                   </div>
                    <div class=" nav-items  w-3/6	lg:h-full hidden lg:inline	"> 
                  <ul class="lg:flex lg:flex-row   lg:h-full lg:justify-between lg:items-center lg:text-2xl   	" >
-                 <li class="nav-item hover:text-white transition duration-500 ease-out  " ><a class="" href="">Projects</a>  </li>
+                 <li class="nav-item hover:text-white transition duration-500 ease-out cursor-pointer " ><a class="projectsMobileView" >Projects</a>  </li>
                  <li class="nav-item hover:text-white transition duration-500 ease-out " ><a href="">Blog</a> </li>
                  <li class="nav-item hover:text-white transition duration-500 ease-out " ><a href="">Services</a></li>
                  <li class="nav-item hover:text-white transition duration-500 ease-out " ><a href="">About</a></li>
@@ -49,7 +49,7 @@
     <!-- section 1 -->
 <div id="mobile-dropdown" class="hidden lg:hidden   mobile-dropdown  bg-gray-800 text-white  h-screen transform  scale-y-0	    		">
  <ul class="h-full">
-    <li class=" nav-item-mobile hover:text-black transition duration-500 ease-out text-center " ><a class="w-full font-semibold  block h-full flex flex-col justify-center items-center border-b-2  text-2xl hover:text-purple-800" target="_blank" href="./about.html">Projects</a>  </li>
+    <li class=" nav-item-mobile hover:text-black transition duration-500 ease-out text-center cursor-pointer " ><a class="projectsWebView w-full font-semibold  block h-full flex flex-col justify-center items-center border-b-2  text-2xl hover:text-purple-800" >Projects</a>  </li>
     <li class=" nav-item-mobile hover:text-black transition duration-500 ease-out text-center " ><a class="w-full font-semibold block h-full flex flex-col justify-center items-center border-b-2  text-2xl hover:text-purple-800"  href="">Blog</a> </li>
     <li class=" nav-item-mobile hover:text-black transition duration-500 ease-out text-center " ><a class="w-full font-semibold block h-full flex flex-col justify-center items-center border-b-2  text-2xl hover:text-purple-800"  href="">Services</a></li>
     <li class=" nav-item-mobile hover:text-black transition duration-500 ease-out text-center " ><a class="w-full font-semibold block h-full flex flex-col justify-center items-center border-b-2  text-2xl hover:text-purple-800"  href="">About</a></li>
@@ -58,14 +58,14 @@
  </ul>
 </div>
    
-     <div  id="hero" class="info  bg-gray-800 lg:px-36  md:px-24 px-8 ">
+     <div  id="hero" class="  headline  info  bg-gray-800 lg:px-36  md:px-24 px-8 ">
          
         <div class="md:flex md:flex-row flex-col md:h-96   justify-between"> 
             <div  class="md:w-3/5 flex flex-col md:pr-28 justify-center" > 
  
                 <div class="lg:text-6xl text-white font-bold text-4xl">Hey,i'm  Aouragh.</div>
-                 <div class="lg:text-2xl text-gray-400 text-2xl md:my-2 my-1 ">I'm a full-stack developer and Computer Science student based in Algeria . </div>
-                <button id="projects" class=" btn rounded-3xl
+                 <div class="lg:text-2xl text-gray-400 text-2xl md:my-2 my-1 ">I'm a MERN stack developer and Computer Science student based in Algeria . </div>
+                <button id="" class=" projectsWebView2 btn rounded-3xl
                 text-white text-xl bg-purple-600 md:w-40 
                md:h-16 mt-4  h-12 w-32 
                items-center  transition duration-500
@@ -87,7 +87,7 @@
         </div>
  
      </div>
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(31,41,55)" fill-opacity="1" d="M0,192L80,165.3C160,139,320,85,480,80C640,75,800,117,960,149.3C1120,181,1280,203,1360,213.3L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg><!-- section 2 --> 
+     <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(31,41,55)" fill-opacity="1" d="M0,192L80,165.3C160,139,320,85,480,80C640,75,800,117,960,149.3C1120,181,1280,203,1360,213.3L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg><!-- section 2 --> 
 <h1 class="lg:px-36  md:px-24 px-8 border-b-4 border-solid md:text-3xl mt-16 pb-4 md:mx-20 mx-8  text-xl ">FEATURED PROJECTS</h1>
  
 <!-- project 1 --> 
@@ -111,8 +111,8 @@
             </div>    
 
                  </div>
-                 <button class=" btn rounded-3xl	text-white text-xl bg-purple-600 md:w-40 md:h-16 mt-4  h-12 w-32 flex flex-row justify-center items-center cursor-pointer transition duration-500 ease-out hover:scale-110 transform hover:bg-white hover:text-black">     
-                                 <a href="http://dzoxygen.herokuapp.com/" target="_blank" class="text-white hover:text-black">View Website</a>
+                 <button class=" btn rounded-3xl tex	text-white sm:text-sm md:text-xl bg-purple-600 md:w-40 md:h-10 mt-4  h-10 w-32 flex flex-row justify-center items-center cursor-pointer transition duration-500 ease-out hover:scale-110 transform hover:bg-white hover:text-black">     
+                                 <a href="http://dzoxygen.herokuapp.com/" target="_blank" class=" hover:text-black">View Website</a>
                    </button>
             
             
@@ -143,12 +143,11 @@
             <div>- MySql database.</div>    
             
                  </div>
-                 <button class=" btn rounded-3xl
-                 	text-white text-xl bg-purple-600 md:w-40 
-                    md:h-16 mt-4  h-12 w-32 
-                    items-center  transition duration-500
-                       ease-out hover:scale-110 transform hover:bg-white
-                        hover:text-black">View details</button>
+                 <button class=" btn rounded-3xl tex	text-white sm:text-sm md:text-xl bg-purple-600 md:w-40 md:h-10 mt-4  h-10 w-32 flex flex-row justify-center items-center cursor-pointer transition duration-500 ease-out hover:scale-110 transform hover:bg-white hover:text-black">     
+                 View details
+      </button>
+
+
             
             
             </div>
@@ -217,13 +216,16 @@
    
 
         <script src="./public/port.js"></script>
+    
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
                 offset : 400, 
                 duration : 1000
             });
-          </script>
+          </script> 
+
     </body>
 
     </html>

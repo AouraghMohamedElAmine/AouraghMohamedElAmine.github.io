@@ -16,7 +16,6 @@ body{
 .logo-border-after{ 
     right: 80%;
     width: 20%;
-
 }
 .nav-item:hover{
 border-bottom: 4px #4b6cc1 solid;
@@ -46,7 +45,7 @@ border: 3px solid rgb(124,58,237);
      margin:0 0 5rem 0 ;
  }
  .mobile-dropdown{ 
-    animation: growDown 500ms ease-out both;
+    animation: growDown 250ms ease-out both;
  
  } 
   

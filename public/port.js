@@ -3,18 +3,24 @@
  let mobile= document.getElementById('mobile-dropdown'); 
  let arrow= document.getElementById('check'); 
  let logo= document.getElementById('logo');
- const projects = document.querySelector('#projects');
-console.log('js is working')
- projects.addEventListener('click',()=>{
-    const hero = document.querySelector('#hero'); 
-    const nav = document.querySelector('#nav'); 
+ const svg = document.getElementById('svg')
+ const projectsWebView1 = document.querySelector('.projectsWebView');
+ const projectsWebView2 = document.querySelector('.projectsWebView2');
+ const projectsMobileView = document.querySelector('.projectsMobileView');
 
-   window.scroll({
-      top:hero.clientHeight+nav.clientHeight,
-       behavior: 'smooth'
-    });
-
- })
+ const ProjectScroller = ()=>{
+    console.log("clicked");
+      const hero = document.querySelector('#hero'); 
+      const nav = document.querySelector('#nav'); 
+     window.scroll({
+        top:hero.clientHeight+nav.clientHeight+svg.clientHeight,
+         behavior: 'smooth'
+      });
+ }
+ 
+ projectsWebView1.addEventListener('click',ProjectScroller);
+ projectsWebView2.addEventListener('click',ProjectScroller);
+ projectsMobileView.addEventListener('click',ProjectScroller);
 
  logo.addEventListener('mouseenter',()=>{ 
 
