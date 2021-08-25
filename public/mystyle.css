@@ -6,6 +6,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+body{
+   animation: transitionIn 0.75s;
+
+}
 
 .logo-border {
   position: absolute;
@@ -50,6 +54,9 @@ body {
 .mobile-growUp {
   animation: growUp 250ms ease-out both;
 }
+.contact-img{ 
+ object-fit: cover;
+}
 @keyframes growDown {
   0% {
     transform: scaleY(0);
@@ -62,5 +69,14 @@ body {
   }
 }
 
+@keyframes transitionIn {
+  0% {
+    opacity: 0.4;
+   }
+
+  100% {
+    opacity: 1;
+   }
+}
 /*
   */
