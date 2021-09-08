@@ -1,0 +1,43 @@
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color:rgb(34,34,34);
+    position: relative;
+  }
+  .fa {
+ color: white;
+}
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background: rgb(34,34,34);;
+
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  #icon{
+  
+    background: rgb(34,34,34);;
+}
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgb(34,34,34);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+  }
+  
+  

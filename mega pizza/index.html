@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredericka+the+Great&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- // -->
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menuBurger.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mega pizza Algerie</title>
+</head>
+
+<body class="menu   ">
+
+
+    <nav id="navBar" class="nav-bar sticky   md:flex md:flex-row md:justify-between  md:px-36        	   ">
+        <div class=" hidden md:block">
+            <a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></a>
+        </div>
+
+        <ul class="hidden md:flex md:flex-row w-4/6 text-white items-center justify-between font-semibold text  ">
+            <li class="hover:text-red-700"> <a href="./index.html">Acceuil</a> </li>
+            <li class="hover:text-red-700"> <a class="cursor-pointer" id="Nav-menu">Menu</a> </li>
+            <li class="hover:text-red-700"> <a href="./Restaurants.html">Nos restaurants</a> </li>
+            <li><button class="bg-red-600   p-2 rounded-xl   font-semibold ">Demander maintenant</button></li>
+        </ul>
+
+        <div class="topnav md:hidden">
+            <a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a  class="text-center" href="./index.html">Acceuil</a> 
+                <a class="text-center"  class="cursor-pointer" id="Nav-menu">Menu</a>
+                <a  class="text-center" href="./Restaurants.html">Nos restaurants</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" id="icon" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-lg"></i>
+            </a>
+        </div>
+
+
+
+
+
+    </nav>
+
+    <section class="hero relative overflow-hidden">
+
+        <img class="absolute bottom-4 right-4 " src="./img/shapes/header-shape-3.png" alt="">
+        <img class="absolute bottom-12 left-12 md:bottom-24 md:left-24" src="./img/shapes/peper.png" alt="">
+        <img class="absolute top-8 right-4 " src="./img/shapes/tomato.png" alt="">
+        <div class="flex slide   ">
+
+            <div class="food-container flex flex-col md:flex-row md:px-36 p-8  flex-shrink-0  	 w-full">
+                <div class="md:w-3/6 flex flex-col justify-center   ">
+                    <div class="text-white text-4xl md:text-7xl z-10">
+                        <h1 class="title">Nous, c'est le goût!</h1>
+                        <h1 class="text-yellow-300 text-xl py-4 text font-medium "> La fammeuse "Pizza boisée" </h1>
+                    </div>
+                    <div class="text-white flex  md:w-4/6 text-xl text">
+                        <button class="bg-red-600   p-1  md:p-2  rounded-2xl text-sm md:text-xl  font-semibold">Demander
+                            maintenant</button>
+                        <p class=" font-semibold p-2">400 DA <span class="line-through text-sm p-2">500 DA</span> </p>
+                    </div>
+                </div>
+                <div class="md:w-3/6 md:h-5/6">
+                    <img class=" image  md:w-5/6 float-right item-small  " src="./img/pizza1.png" alt="">
+                </div>
+            </div>
+
+            <div class="food-container flex flex-col md:flex-row md:px-36 p-8   flex-shrink-0	 w-full ">
+                <div class="md:w-3/6 flex flex-col justify-center   ">
+                    <div class="text-white text-4xl md:text-7xl z-10">
+                        <h1 class="title">La qualité est notre recette! </h1>
+                        <h1 class="text-yellow-300 text-xl py-4 text font-medium "> double cheese + viande hachée +
+                            sauce au choix </h1>
+                    </div>
+                    <div class="text-white flex  md:w-4/6 text-xl text">
+                        <button class="bg-red-600   p-1  md:p-2  rounded-2xl text-sm md:text-xl  font-semibold">Demander
+                            maintenant</button>
+                        <p class=" font-semibold p-2">250 DA <span class="line-through text-sm p-2">350 DA</span> </p>
+                    </div>
+                </div>
+                <div class="md:w-3/6 md:h-5/6">
+                    <img class=" image  md:w-5/6 float-right item-small  " src="./img/burger.png" alt="">
+                </div>
+            </div>
+
+            <div class="food-container flex flex-col md:flex-row   md:px-36 p-8  flex-shrink-0	 w-full ">
+                <div class="md:w-3/6 flex flex-col justify-center   ">
+                    <div class="text-white text-4xl md:text-7xl z-10">
+                        <h1 class="title">Goûtez la différence ! </h1>
+                        <h1 class="text-yellow-300 text-xl py-4 text font-medium "> le meilleure tacos </h1>
+                    </div>
+                    <div class="text-white flex  md:w-4/6 text-xl text ">
+                        <button class="bg-red-600  p-1  md:p-2 rounded-2xl text-sm md:text-xl  font-semibold">Demander
+                            maintenant</button>
+                        <p class=" font-semibold p-2">450 DA <span class="line-through text-sm p-2">350 DA</span> </p>
+                    </div>
+                </div>
+                <div class="md:w-3/6 md:h-5/6">
+                    <img class=" image  md:w-5/6 float-right item-small  " src="./img/TACOS.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="text-white absolute right-2/4	bottom-4	  ">
+            <!-- <button id="prevBtn">
+                <i class="fas fa-arrow-circle-left"></i>
+            </button> -->
+            <button id="nextBtn">
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <div class="flex flex-col md:flex-row  md:px-36 p-8  ">
+            <div class=" md:self-center text-white md:w-3/6 ">
+                <h1 class="sub-title chili-font text-xl">Bienvenue à Mega pizza </h1>
+                <h1 class="title text-3xl md:text-5xl my-4 ">Nous servons la meilleure pizza du pays</h1>
+                <h1 class="text my-4 ">Nous sommes le n°1 de la restauration rapide au pays avec plus de 10 ans de
+                    réputation. Les
+                    meilleurs hamburgers, tacos et pizzas du pays sont livrés par nos soins. Nous gagnons la
+                    satisfaction de nos clients avec notre service délicat et une qualité alimentaire extrêmement
+                    élevée.
+                </h1>
+                <button class="bg-red-600  h-10 my-4  p-2 rounded-2xl font-semibold    ">A propos nous </button>
+            </div>
+            <div class="flex flex-row  md:w-3/6  ">
+                <!-- <div class=" self-center space-between ">
+                    <div> <img class="rounded-lg m-2 " src="./img/worker 2.jpg" alt=""></div>
+                    <div> <img class="rounded-lg m-2 " src="./img/worker.jpg" alt=""></div>
+                </div> -->
+                <div class="self-center p-2"> <img class="rounded-lg m-2 " src="./img/outside.jpg" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="menu-section" class=" md:px-36 p-8 ">
+
+
+        <div class=" text-center text-white  ">
+            <h1 class="chili-font text-xl">MENU</h1>
+            <h1 class="text-3xl md:text-5xl  chili-font title text-white">Choisissez parmi les meilleurs
+            </h1>
+        </div>
+
+        <div class="menu-items mx-auto md:w-4/6 text-white text-center font-semibold chili-font tracking-widest		  ">
+            <div id="0" class=" menu-item flex flex-col justify-center items-center">
+                <img src="./img/menu/burger.png" alt="burger">
+                <h1>Burgers</h1>
+            </div>
+            <div id="1" class=" menu-item flex flex-col justify-center items-center">
+                <img src="./img/menu/sandwich.png" alt="sandwich">
+                <h1>Tacos</h1>
+            </div>
+            <div id="2" class=" menu-item flex flex-col justify-center items-center">
+                <img src="./img/menu/pizza.png" alt="pizza">
+                <h1>Pizzas</h1>
+            </div>
+            <div id="3" class=" menu-item flex flex-col justify-center items-center">
+                <img src="./img/menu/dessert.png" alt="dessert">
+                <h1>Desserts</h1>
+            </div>
+            <div id="4" class=" menu-item flex flex-col justify-center items-center">
+                <img src="./img/menu/shakes.png" alt="shakes">
+                <h1>Shakes</h1>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class=" slider-container overflow-hidden  h-80  ">
+
+        <div class="  flex  w-full  justify-start  flex-shrink-0    ">
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center    py-6  flex-shrink-0 ">
+                <h1 class="title text-white text-xl md:text-3xl">Cheeseburger </h1>
+                <h1 class="text text-white py-1">burger ingredients</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/burgers/burger1.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class="title text-white text-xl md:text-3xl">Burger au bacon </h1>
+                <h1 class="text text-white py-1">burger ingredients</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/burgers/burger2.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class="title text-white text-xl md:text-3xl">burger name </h1>
+                <h1 class="text text-white py-1">burger ingredients</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/burgers/burger3.png">
+            </div>
+
+
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Tacos 3 fromages </h1>
+                <h1 class="text text-white py-1">Tacos 3 fromages</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/tacos/tacos1.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Tacos poulé </h1>
+                <h1 class="text text-white py-1">Tacos poulé</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/tacos/tacos2.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Tacos viande hachée </h1>
+                <h1 class="text text-white py-1">Tacos viande</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/tacos/tacos3.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Pizza peperoni</h1>
+                <h1 class="text text-white py-1">Pizza name</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/pizzas/pizza1.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Pizzas algerienne </h1>
+                <h1 class="text text-white py-1">Pizza name</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/pizzas/pizza2.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Pizza viande</h1>
+                <h1 class="text text-white py-1">Pizza name</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/pizzas/pizza3.png">
+            </div>
+
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class="title text-white text-xl md:text-3xl">Desserts </h1>
+                <h1 class="text text-white py-1">Desserts</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/desserts/tiramisu.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Desserts </h1>
+                <h1 class="text text-white py-1">Desserts</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">450 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/desserts/coctail.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">jus </h1>
+                <h1 class="text text-white py-1">Desserts</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	">450 da </h1>
+                <img class="absolute top-3/4	 	" src="./img/menu/desserts/jus.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class="title text-white text-xl md:text-3xl">Oreo milk Shake </h1>
+                <h1 class="text text-white py-1">Oreo Shake</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">300 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/shakes/shake1.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl">Creme Shake </h1>
+                <h1 class="text text-white py-1">Creme Shake</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	 ">300 da </h1>
+                <img class="absolute top-3/4		" src="./img/menu/shakes/shake2.png">
+            </div>
+
+            <div class="menu-slide-item flex flex-col items-center w-4/12 relative text-center   py-6  flex-shrink-0 ">
+                <h1 class=" text-center title text-white text-xl md:text-3xl"> Oreo creme Shake </h1>
+                <h1 class="text text-white py-1">Oreo creme Shake</h1>
+                <h1 class="text chili-font text-xl md:text-xl font-semibold z-10	">300 da </h1>
+                <img class="absolute top-3/4	 	" src="./img/menu/shakes/shake3.png">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="m-8 md:mx-36 overflow-hidden  mt-0">
+        <h1 class="chili-font text-center my-8 text-3xl ">Mega autour de l' Algerie ! </h1>
+        <div class="locations-slider flex locationSlider  md:h-4/6 ">
+
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Constantine</h1>
+                <img class="w-full max-h-location " src="./img/locations/alimendjli.lite.jpg" alt="">
+            </div>
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Constantine</h1>
+                <img class="w-full max-h-location " src="./img/locations/alimendjli2.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Constantine</h1>
+                <img class="w-full max-h-location " src="./img/locations/alimendjli3.lite.jpg" alt="">
+            </div>
+
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Batna</h1>
+                <img class="w-full max-h-location " src="./img/locations/batna.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Batna</h1>
+                <img class="w-full max-h-location " src="./img/locations/batna2.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Batna</h1>
+                <img class="w-full max-h-location " src="./img/locations/batna3.lite.jpg" alt="">
+            </div>
+
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Annaba</h1>
+                <img class="w-full max-h-location " src="./img/locations/annaba.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Annaba</h1>
+                <img class="w-full max-h-location " src="./img/locations/annaba2.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Annaba</h1>
+                <img class="w-full max-h-location " src="./img/locations/annaba3.lite.jpg" alt="">
+            </div>
+
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Mila</h1>
+                <img class="w-full max-h-location " src="./img/locations/mila1.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Mila</h1>
+                <img class="w-full max-h-location " src="./img/locations/mila2.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Mila</h1>
+                <img class="w-full max-h-location " src="./img/locations/mila3.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Alger</h1>
+                <img class="w-full max-h-location " src="./img/locations/alger.lite.jpg" alt="">
+            </div>
+
+            <div class="flex-shrink-0   relative object-cover h-auto w-full">
+                <h1
+                    class="font-bold   absolute bottom-12 left-12 md:bottom-24 md:left-24 text-4xl md:text-7xl chili-font">
+                    Alger</h1>
+                <img class="w-full max-h-location " src="./img/locations/alger2.lite.jpg" alt="">
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <footer class="section text-white p-8 md:flex md:flex-row md:px-36 ">
+        <div class="md:w-3/6 self-center  ">
+            <img class="" src="./img/logo.png" height="100px" width="120px" alt="">
+            <ul class="text">
+                <li class="my-1"> <i class="fas fa-map-marker-alt"></i> <b> Alger, Batna, Constantine, Annaba, Mila </b>
+                </li>
+                <li class="my-1"> <i class="fas fa-phone"></i> Numero : <a href="tel:+6494461709">5656565</a> </li>
+                <li class="my-1"> <i class="far fa-envelope"></i> Email : <a
+                        href="mailto:+zezezef">megapizzadz@gmail.com</a></li>
+                <li class="my-1">abonnez nous sur </li>
+                <li class="my-1">
+                    <a class="mx-1" href=""><i class="fab fa-facebook"></i> </a>
+                    <a class="mx-1" href=""><i class="fab fa-instagram"></i> </a>
+                    <a class="mx-1" href=""><i class="fab fa-twitter"></i> </a>
+                </li>
+            </ul>
+        </div>
+        <div class="md:w-3/6 self-center text-center ">
+            <h1 class="chili-font  text-2xl">Temps de travail</h1>
+            <h1>Touts les journées de la semaine de 10:00 a 23:00 </h1>
+        </div>
+
+    </footer>
+
+
+
+
+    <div class="section text-center text-gray-200 p-2 ">
+        <p class="text-xs">Made with ❤️ By <a class="text-white" href="https://aouraghmohamedelamine.github.io/"
+                target="_blank">Aouragh mohammed el amine</a> </p>
+    </div>
+</body>
+<script src="./heroSlider.js"> </script>
+<script src="./MenuSlider.js"> </script>
+<script src="./locationsSlider.js"> </script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>
